@@ -76,6 +76,7 @@ t=0;
 
 var textsize=40;
 var ptextsize=textsize*.75;
+var htextsize=textsize*1.25
 
 var s=textsize*1.36;
 var b=220;
@@ -154,7 +155,7 @@ function draw() {
 
 	if (page==2){
 
-				Htextt("BEERS",line1x,b-10,50);
+				Htextt("BEERS",line1x,b-10,htextsize);
 				H2textt("Draft",line1x,b+s-5,textsize);
 
 				for (let i=0;i<10;i+=1){
@@ -175,7 +176,7 @@ function draw() {
 					Ptextt(BC_PRICE[i],line1x+30,b+s+line1space+(i*s),ptextsize);
 				}
 
-				Htextt("CIDERS",line2x,b-10,50);
+				Htextt("CIDERS",line2x,b-10,htextsize);
 
 				  for (let i=0;i<10;i+=1){
 					textt(CIDERS[i],line2x+40,b+s+(i*s),textsize);
@@ -185,7 +186,7 @@ function draw() {
 					Ptextt(C_PRICE[i],line2x+30,b+s+(i*s),ptextsize);
 				}
 
-				Htextt("MARGARITAS",line2x,line2space+b-10,50);
+				Htextt("MARGARITAS",line2x,line2space+b-10,htextsize);
 
 				  for (let i=0;i<10;i+=1){
 					textt(MARGARITAS[i],line2x+40,line2space+b+s+(i*s),textsize);
@@ -195,7 +196,7 @@ function draw() {
 					Ptextt(M_PRICE[i],line2x+30,line2space+b+s+(i*s),ptextsize);
 				}
 
-				Htextt("WINES",line3x,b-10,50);
+				Htextt("WINES",line3x,b-10,htextsize);
 
 				  for (let i=0;i<10;i+=1){
 					textt(WINES[i],line3x+40,b+s+(i*s),textsize);
@@ -215,7 +216,7 @@ function draw() {
 					Ptextt(WC_PRICE[i],line3x+30,line3space+b+s+(i*s),ptextsize);
 				}
 
-				Htextt("SPECIALS",line3x,line3space2+b-10,50);
+				Htextt("SPECIALS",line3x,line3space2+b-10,htextsize);
 
 				  for (let i=0;i<10;i+=1){
 					textt(SPECIALS[i],line3x+40,line3space2+b+s+(i*s),textsize);
@@ -229,7 +230,7 @@ function draw() {
 
 if (page==1){
 				
-				Htextt("COCKTAILS",line1x,b-10,50);
+				Htextt("COCKTAILS",line1x,b-10,htextsize);
 
 				for (let i=0;i<10;i+=1){
 					textt(COCKTAILS[i],line1x+40,line1c+b+(i*ss),textsize);
@@ -253,7 +254,7 @@ if (page==1){
 					Ptextt(NA_PRICE[i],line2x+30,b+s+(i*s),ptextsize);
 				}
 
-				Htextt("FOOD",line2x,line2space+b-10,50);
+				Htextt("FOOD",line2x,line2space+b-10,htextsize);
 
 				 for (let i=0;i<10;i+=1){
 					textt(FOOD[i],line2x+40,line2space+b+s+(i*s),textsize);
@@ -263,7 +264,7 @@ if (page==1){
 					Ptextt(F_PRICE[i],line2x+30,line2space+b+s+(i*s),ptextsize);
 				}
 
-				Htextt("HAPPY HOUR",line3x,b-10,50);
+				Htextt("HAPPY HOUR",line3x,b-10,htextsize);
 				H2textt("6pm - 9pm",line3x,b+s-15,textsize);
 
 				 for (let i=0;i<10;i+=1){

@@ -151,8 +151,8 @@ var time=50;
  if (t>=time){t=0;}
 
 
- if (t<=(time/2){page=1;}
- if (t>(time/2){page=2;}
+ if (t<=(time/2)){page=1;}
+ if (t>(time/2)){page=2;}
 
  console.log(t);
 

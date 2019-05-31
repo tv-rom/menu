@@ -54,7 +54,7 @@ function setup() {
 vid = createVideo("windy.mp4");
 vid.loop();
 
-t=0;
+var t=0;
 
 
 }
@@ -113,6 +113,8 @@ function draw() {
 
  if (t<=10){page=1;}
  if (t>10){page=2;}
+
+ console.log(t);
 
 	if (page==1){
 

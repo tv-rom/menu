@@ -38,6 +38,8 @@ function preload() {
 
     var vid;
 
+    var t;
+
 function setup() {
 	//createCanvas(1920, 1080);
 	createCanvas(1920, 1080);
@@ -51,6 +53,8 @@ function setup() {
 
 vid = createVideo("windy.mp4");
 vid.loop();
+
+t=0;
 
 
 }
@@ -100,79 +104,96 @@ function showInfo(stuff, tabletop) {
 function draw() {
  background(0);
  image(vid,0,0,1920,1080);
- fill(0,0,0,60);
- rect(0,0,2000,2000);
+ //fill(0,0,0,60);
+ //rect(0,0,2000,2000);
 
-	Htextt("BEERS",line1x,b-10,50);
-	H2textt("Draft",line1x,b+s+5,30);
+ t+=1;
 
-	for (let i=0;i<10;i+=1){
-		textt(BEERS_DRAFT[i],line1x+40,b+line1draft+(i*s),30);
+ if (t>20){t==0;}
+
+ if (t<=10){page=1;}
+ if (t>10){page=2;}
+
+	if (page==1){
+
+				Htextt("BEERS",line1x,b-10,50);
+				H2textt("Draft",line1x,b+s+5,30);
+
+				for (let i=0;i<10;i+=1){
+					textt(BEERS_DRAFT[i],line1x+40,b+line1draft+(i*s),30);
+				}
+
+				for (let i=0;i<10;i+=1){
+					Ptextt(BD_PRICE[i],line1x+30,b+line1draft+(i*s),30);
+				}
+
+				H2textt("Canned",line1x,b+line1space,30);
+
+				 for (let i=0;i<10;i+=1){
+					textt(BEERS_CAN[i],line1x+40,b+s+line1space+(i*s),30);
+				}
+
+				for (let i=0;i<10;i+=1){
+					Ptextt(BC_PRICE[i],line1x+30,b+s+line1space+(i*s),30);
+				}
+
+				Htextt("CIDERS",line2x,b-10,50);
+
+				  for (let i=0;i<10;i+=1){
+					textt(CIDERS[i],line2x+40,b+s+(i*s),30);
+				}
+
+				for (let i=0;i<10;i+=1){
+					Ptextt(C_PRICE[i],line2x+30,b+s+(i*s),30);
+				}
+
+				Htextt("MARGARITAS",line2x,line2space+b-10,50);
+
+				  for (let i=0;i<10;i+=1){
+					textt(MARGARITAS[i],line2x+40,line2space+b+s+(i*s),30);
+				}
+
+				for (let i=0;i<10;i+=1){
+					Ptextt(M_PRICE[i],line2x+30,line2space+b+s+(i*s),30);
+				}
+
+				Htextt("WINES",line3x,b-10,50);
+
+				  for (let i=0;i<10;i+=1){
+					textt(WINES[i],line3x+40,b+s+(i*s),30);
+				}
+
+				for (let i=0;i<10;i+=1){
+					Ptextt(W_PRICE[i],line3x+30,b+s+(i*s),30);
+				}
+
+				H2textt("Canned",line3x,b+line3space,30)
+
+				for (let i=0;i<10;i+=1){
+					textt(WINES_CAN[i],line3x+40,line3space+b+s+(i*s),30);
+				}
+
+				for (let i=0;i<10;i+=1){
+					Ptextt(WC_PRICE[i],line3x+30,line3space+b+s+(i*s),30);
+				}
+
+				Htextt("SPECIALS",line3x,line3space2+b-10,50);
+
+				  for (let i=0;i<10;i+=1){
+					textt(SPECIALS[i],line3x+40,line3space2+b+s+(i*s),30);
+				}
+
+				for (let i=0;i<10;i+=1){
+					Ptextt(S_PRICE[i],line3x+30,line3space2+b+s+(i*s),30);
+				}
+
 	}
 
-	for (let i=0;i<10;i+=1){
-		Ptextt(BD_PRICE[i],line1x+30,b+line1draft+(i*s),30);
-	}
+if (page==2){
+Htextt("HELLO",line3x,line3space2+b-10,50);
+}
 
-	H2textt("Canned",line1x,b+line1space,30);
 
-	 for (let i=0;i<10;i+=1){
-		textt(BEERS_CAN[i],line1x+40,b+s+line1space+(i*s),30);
-	}
-
-	for (let i=0;i<10;i+=1){
-		Ptextt(BC_PRICE[i],line1x+30,b+s+line1space+(i*s),30);
-	}
-
-	Htextt("CIDERS",line2x,b-10,50);
-
-	  for (let i=0;i<10;i+=1){
-		textt(CIDERS[i],line2x+40,b+s+(i*s),30);
-	}
-
-	for (let i=0;i<10;i+=1){
-		Ptextt(C_PRICE[i],line2x+30,b+s+(i*s),30);
-	}
-
-	Htextt("MARGARITAS",line2x,line2space+b-10,50);
-
-	  for (let i=0;i<10;i+=1){
-		textt(MARGARITAS[i],line2x+40,line2space+b+s+(i*s),30);
-	}
-
-	for (let i=0;i<10;i+=1){
-		Ptextt(M_PRICE[i],line2x+30,line2space+b+s+(i*s),30);
-	}
-
-	Htextt("WINES",line3x,b-10,50);
-
-	  for (let i=0;i<10;i+=1){
-		textt(WINES[i],line3x+40,b+s+(i*s),30);
-	}
-
-	for (let i=0;i<10;i+=1){
-		Ptextt(W_PRICE[i],line3x+30,b+s+(i*s),30);
-	}
-
-	H2textt("Canned",line3x,b+line3space,30)
-
-	for (let i=0;i<10;i+=1){
-		textt(WINES_CAN[i],line3x+40,line3space+b+s+(i*s),30);
-	}
-
-	for (let i=0;i<10;i+=1){
-		Ptextt(WC_PRICE[i],line3x+30,line3space+b+s+(i*s),30);
-	}
-
-	Htextt("SPECIALS",line3x,line3space2+b-10,50);
-
-	  for (let i=0;i<10;i+=1){
-		textt(SPECIALS[i],line3x+40,line3space2+b+s+(i*s),30);
-	}
-
-	for (let i=0;i<10;i+=1){
-		Ptextt(S_PRICE[i],line3x+30,line3space2+b+s+(i*s),30);
-	}
 
 }
 

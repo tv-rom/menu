@@ -144,7 +144,7 @@ function draw() {
 
  console.log(t);
 
-	if (page==1){
+	if (page==2){
 
 				Htextt("BEERS",line1x,b-10,50);
 				H2textt("Draft",line1x,b+s+5,30);
@@ -219,7 +219,7 @@ function draw() {
 
 	}
 
-if (page==2){
+if (page==1){
 				
 				Htextt("COCKTAILS",line1x,b-10,50);
 

@@ -66,8 +66,8 @@ function setup() {
 
   //window.addEventListener('DOMContentLoaded', init)
 
-vid = createVideo("windy.mp4");
-vid.loop();
+//vid = createVideo("windy.mp4");
+//vid.loop();
 
 t=0;
 
@@ -77,16 +77,19 @@ t=0;
 var s=40;
 var b=140;
 
-var line1x=220;
+var line1x=180;
 var line1draft=90;
-var line1space=b+180;
+var line1space=b+120;
 
-var line2x=line1x+410;
+var line2x=line1x+420;
 var line2space=b+180;
 
 var line3x=line1x+870;
 var line3space=b+50;
 var line3space2=b+250;
+
+var line1c=50;
+var ss=70;
 
 
 
@@ -224,12 +227,50 @@ if (page==1){
 				Htextt("COCKTAILS",line1x,b-10,50);
 
 				for (let i=0;i<10;i+=1){
-					textt(COCKTAILS[i],line1x+40,b+(i*s),30);
+					textt(COCKTAILS[i],line1x+40,line1c+b+(i*ss),30);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(CT_PRICE[i],line1x+30,b+(i*s),30);
+					Ptextt(CT_PRICE[i],line1x+30,line1c+b+(i*ss),30);
 				}
+
+				for (let i=0;i<10;i+=1){
+					H2textt(CT_EXT[i],line1x+40,30+line1c+b+(i*ss),25);
+				}
+
+				Htextt("NON-ALCOHOLIC",line2x,b-10,30);
+
+				 for (let i=0;i<10;i+=1){
+					textt(NON_ALC[i],line2x+40,b+s+(i*s),30);
+				}
+
+				for (let i=0;i<10;i+=1){
+					Ptextt(NA_PRICE[i],line2x+30,b+s+(i*s),30);
+				}
+
+				Htextt("FOOD",line2x,line2space+b-10,50);
+
+				 for (let i=0;i<10;i+=1){
+					textt(FOOD[i],line2x+40,line2space+b+s+(i*s),30);
+				}
+
+				for (let i=0;i<10;i+=1){
+					Ptextt(F_PRICE[i],line2x+30,line2space+b+s+(i*s),30);
+				}
+
+				Htextt("HAPPY HOUR",line3x,b-10,50);
+				H2textt("6pm - 9pm",line3x,b+s,30);
+
+				 for (let i=0;i<10;i+=1){
+					textt(HAPPY[i],line3x+40,50+b+s+(i*s),30);
+				}
+
+				for (let i=0;i<10;i+=1){
+					Ptextt(HAPPY_PRICE[i],line3x+30,50+b+s+(i*s),30);
+				}
+
+			
+
 }
 
 

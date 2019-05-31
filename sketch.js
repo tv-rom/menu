@@ -36,6 +36,19 @@ function preload() {
     var WC_PRICE=[]; 
     var S_PRICE=[];
 
+    var COCKTAILS=[];
+    var NON_ALC=[];
+    var FOOD=[];
+    var HAPPY=[];
+
+    var CT_EXT=[];
+
+    var CT_PRICE=[];
+    var NA_PRICE=[];
+    var F_PRICE=[];
+    var HAPPY_PRICE=[];
+
+
     var page;
 
     var vid;
@@ -98,6 +111,18 @@ function showInfo(stuff, tabletop) {
     WC_PRICE[i] = stuff[i].WC_PRICE;
     S_PRICE[i] = stuff[i].S_PRICE;
 
+    COCKTAILS[i] = stuff[i].COCKTAILS;
+    NON_ALC[i] = stuff[i].NON_ALC;
+    FOOD[i] = stuff[i].FOOD;
+    HAPPY[i] = stuff[i].HAPPY;
+
+    CT_EXT[i] = stuff[i].CT_EXT;
+
+    CT_PRICE[i] = stuff[i].CT_PRICE;
+    NA_PRICE[i] = stuff[i].NA_PRICE;
+    F_PRICE[i] = stuff[i].F_PRICE;
+    HAPPY_PRICE[i] = stuff[i].HAPPY_PRICE;
+
 
   }
 }
@@ -113,7 +138,6 @@ function draw() {
 
  if (t>=200){t=0;}
 
- //hello
 
  if (t<=100){page=1;}
  if (t>100){page=2;}
@@ -196,7 +220,16 @@ function draw() {
 	}
 
 if (page==2){
-Htextt("HELLO",line3x,line3space2+b-10,50);
+				
+				Htextt("COCKTAILS",line1x,b-10,50);
+
+				for (let i=0;i<10;i+=1){
+					textt(COCKTAILS[i],line1x+40,b+line1draft+(i*s),30);
+				}
+
+				for (let i=0;i<10;i+=1){
+					Ptextt(CT_PRICE[i],line1x+30,b+line1draft+(i*s),30);
+				}
 }
 
 

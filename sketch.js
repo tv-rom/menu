@@ -100,6 +100,8 @@ function showInfo(stuff, tabletop) {
 function draw() {
  background(0);
  image(vid,0,0,1920,1080);
+ fill(0,0,0,60);
+ rect(0,0,2000,2000);
 
 	Htextt("BEERS",line1x,b-10,50);
 	H2textt("Draft",line1x,b+s+5,30);

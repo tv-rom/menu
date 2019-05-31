@@ -75,7 +75,7 @@ t=0;
 }
 
 var textsize=40;
-var ptextsize=30;
+var ptextsize=textsize*.75;
 
 var s=textsize*1.36;
 var b=220;

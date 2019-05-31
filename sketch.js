@@ -74,22 +74,25 @@ t=0;
 
 }
 
-var s=40;
-var b=140;
+var s=60;
+var b=220;
 
-var line1x=180;
-var line1draft=90;
+var line1x=150;
+var line1draft=110;
 var line1space=b+120;
 
-var line2x=line1x+420;
+var line2x=line1x+520;
 var line2space=b+180;
 
-var line3x=line1x+870;
-var line3space=b+50;
+var line3x=line1x+970;
+var line3space=b+0;
 var line3space2=b+250;
 
 var line1c=50;
-var ss=70;
+var ss=80;
+
+var textsize=40;
+var ptextsize=30;
 
 
 
@@ -150,74 +153,74 @@ function draw() {
 	if (page==2){
 
 				Htextt("BEERS",line1x,b-10,50);
-				H2textt("Draft",line1x,b+s+5,30);
+				H2textt("Draft",line1x,b+s-5,textsize);
 
 				for (let i=0;i<10;i+=1){
-					textt(BEERS_DRAFT[i],line1x+40,b+line1draft+(i*s),30);
+					textt(BEERS_DRAFT[i],line1x+40,b+line1draft+(i*s),textsize);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(BD_PRICE[i],line1x+30,b+line1draft+(i*s),30);
+					Ptextt(BD_PRICE[i],line1x+30,b+line1draft+(i*s),ptextsize);
 				}
 
-				H2textt("Canned",line1x,b+line1space,30);
+				H2textt("Canned",line1x,b+line1space,textsize);
 
 				 for (let i=0;i<10;i+=1){
-					textt(BEERS_CAN[i],line1x+40,b+s+line1space+(i*s),30);
+					textt(BEERS_CAN[i],line1x+40,b+s+line1space+(i*s),textsize);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(BC_PRICE[i],line1x+30,b+s+line1space+(i*s),30);
+					Ptextt(BC_PRICE[i],line1x+30,b+s+line1space+(i*s),ptextsize);
 				}
 
 				Htextt("CIDERS",line2x,b-10,50);
 
 				  for (let i=0;i<10;i+=1){
-					textt(CIDERS[i],line2x+40,b+s+(i*s),30);
+					textt(CIDERS[i],line2x+40,b+s+(i*s),textsize);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(C_PRICE[i],line2x+30,b+s+(i*s),30);
+					Ptextt(C_PRICE[i],line2x+30,b+s+(i*s),ptextsize);
 				}
 
 				Htextt("MARGARITAS",line2x,line2space+b-10,50);
 
 				  for (let i=0;i<10;i+=1){
-					textt(MARGARITAS[i],line2x+40,line2space+b+s+(i*s),30);
+					textt(MARGARITAS[i],line2x+40,line2space+b+s+(i*s),textsize);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(M_PRICE[i],line2x+30,line2space+b+s+(i*s),30);
+					Ptextt(M_PRICE[i],line2x+30,line2space+b+s+(i*s),ptextsize);
 				}
 
 				Htextt("WINES",line3x,b-10,50);
 
 				  for (let i=0;i<10;i+=1){
-					textt(WINES[i],line3x+40,b+s+(i*s),30);
+					textt(WINES[i],line3x+40,b+s+(i*s),textsize);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(W_PRICE[i],line3x+30,b+s+(i*s),30);
+					Ptextt(W_PRICE[i],line3x+30,b+s+(i*s),ptextsize);
 				}
 
-				H2textt("Canned",line3x,b+line3space,30)
+				H2textt("Canned",line3x,b+line3space,textsize)
 
 				for (let i=0;i<10;i+=1){
-					textt(WINES_CAN[i],line3x+40,line3space+b+s+(i*s),30);
+					textt(WINES_CAN[i],line3x+40,line3space+b+s+(i*s),textsize);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(WC_PRICE[i],line3x+30,line3space+b+s+(i*s),30);
+					Ptextt(WC_PRICE[i],line3x+30,line3space+b+s+(i*s),ptextsize);
 				}
 
 				Htextt("SPECIALS",line3x,line3space2+b-10,50);
 
 				  for (let i=0;i<10;i+=1){
-					textt(SPECIALS[i],line3x+40,line3space2+b+s+(i*s),30);
+					textt(SPECIALS[i],line3x+40,line3space2+b+s+(i*s),textsize);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(S_PRICE[i],line3x+30,line3space2+b+s+(i*s),30);
+					Ptextt(S_PRICE[i],line3x+30,line3space2+b+s+(i*s),ptextsize);
 				}
 
 	}
@@ -227,11 +230,11 @@ if (page==1){
 				Htextt("COCKTAILS",line1x,b-10,50);
 
 				for (let i=0;i<10;i+=1){
-					textt(COCKTAILS[i],line1x+40,line1c+b+(i*ss),30);
+					textt(COCKTAILS[i],line1x+40,line1c+b+(i*ss),textsize);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(CT_PRICE[i],line1x+30,line1c+b+(i*ss),30);
+					Ptextt(CT_PRICE[i],line1x+30,line1c+b+(i*ss),ptextsize);
 				}
 
 				for (let i=0;i<10;i+=1){
@@ -241,32 +244,32 @@ if (page==1){
 				Htextt("NON-ALCOHOLIC",line2x,b-10,30);
 
 				 for (let i=0;i<10;i+=1){
-					textt(NON_ALC[i],line2x+40,b+s+(i*s),30);
+					textt(NON_ALC[i],line2x+40,b+s+(i*s),textsize);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(NA_PRICE[i],line2x+30,b+s+(i*s),30);
+					Ptextt(NA_PRICE[i],line2x+30,b+s+(i*s),ptextsize);
 				}
 
 				Htextt("FOOD",line2x,line2space+b-10,50);
 
 				 for (let i=0;i<10;i+=1){
-					textt(FOOD[i],line2x+40,line2space+b+s+(i*s),30);
+					textt(FOOD[i],line2x+40,line2space+b+s+(i*s),textsize);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(F_PRICE[i],line2x+30,line2space+b+s+(i*s),30);
+					Ptextt(F_PRICE[i],line2x+30,line2space+b+s+(i*s),ptextsize);
 				}
 
 				Htextt("HAPPY HOUR",line3x,b-10,50);
-				H2textt("6pm - 9pm",line3x,b+s,30);
+				H2textt("6pm - 9pm",line3x,b+s-15,textsize);
 
 				 for (let i=0;i<10;i+=1){
-					textt(HAPPY[i],line3x+40,50+b+s+(i*s),30);
+					textt(HAPPY[i],line3x+40,50+b+s+(i*s),textsize);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(HAPPY_PRICE[i],line3x+30,50+b+s+(i*s),30);
+					Ptextt(HAPPY_PRICE[i],line3x+30,50+b+s+(i*s),ptextsize);
 				}
 
 			
@@ -299,7 +302,7 @@ text(string,x,y);
 
 function textt(string,x,y,size){
 textFont(font);
-fill(255);
+fill(235);
 textSize(size);
 textAlign(LEFT);
 text(string,x,y);

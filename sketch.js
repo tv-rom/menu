@@ -54,7 +54,7 @@ function setup() {
 vid = createVideo("windy.mp4");
 vid.loop();
 
-var t=0;
+t=0;
 
 
 }

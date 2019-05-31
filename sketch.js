@@ -74,7 +74,10 @@ t=0;
 
 }
 
-var s=60;
+var textsize=40;
+var ptextsize=30;
+
+var s=textsize*1.36;
 var b=220;
 
 var line1x=150;
@@ -91,8 +94,7 @@ var line3space2=b+250;
 var line1c=50;
 var ss=80;
 
-var textsize=40;
-var ptextsize=30;
+
 
 
 

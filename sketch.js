@@ -36,6 +36,8 @@ function preload() {
     var WC_PRICE=[]; 
     var S_PRICE=[];
 
+    var page;
+
     var vid;
 
     var t;
@@ -103,7 +105,7 @@ function showInfo(stuff, tabletop) {
 
 function draw() {
  background(0);
- image(vid,0,0,1920,1080);
+ //image(vid,0,0,1920,1080);
  //fill(0,0,0,60);
  //rect(0,0,2000,2000);
 

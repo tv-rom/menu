@@ -95,6 +95,7 @@ var line3space2=b+250;
 var line1c=50;
 var ss=80;
 
+var time=50;
 
 
 
@@ -143,7 +144,7 @@ function draw() {
  //fill(0,0,0,60);
  //rect(0,0,2000,2000);
 
-var time=50;
+
 
  t+=.5;
 

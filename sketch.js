@@ -224,11 +224,11 @@ if (page==1){
 				Htextt("COCKTAILS",line1x,b-10,50);
 
 				for (let i=0;i<10;i+=1){
-					textt(COCKTAILS[i],line1x+40,b+line1draft+(i*s),30);
+					textt(COCKTAILS[i],line1x+40,b+(i*s),30);
 				}
 
 				for (let i=0;i<10;i+=1){
-					Ptextt(CT_PRICE[i],line1x+30,b+line1draft+(i*s),30);
+					Ptextt(CT_PRICE[i],line1x+30,b+(i*s),30);
 				}
 }
 

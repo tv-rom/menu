@@ -111,7 +111,7 @@ function draw() {
 
  t+=1;
 
- if (t>200){t==0;}
+ if (t>200){t=0;}
 
  if (t<=100){page=1;}
  if (t>100){page=2;}

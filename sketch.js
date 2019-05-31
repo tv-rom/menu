@@ -143,13 +143,16 @@ function draw() {
  //fill(0,0,0,60);
  //rect(0,0,2000,2000);
 
+var time=50;
+
  t+=.5;
 
- if (t>=200){t=0;}
+
+ if (t>=time){t=0;}
 
 
- if (t<=100){page=1;}
- if (t>100){page=2;}
+ if (t<=(time/2){page=1;}
+ if (t>(time/2){page=2;}
 
  console.log(t);
 

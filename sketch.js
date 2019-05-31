@@ -181,7 +181,7 @@ textFont(Hfont);
 fill(255);
 textSize(size);
 textAlign(LEFT);
-text(string, x, y);
+text(string,x,y);
 
 }
 
@@ -190,7 +190,7 @@ textFont(H2font);
 fill(255);
 textSize(size);
 textAlign(LEFT);
-text(string, x, y);
+text(string,x,y);
 
 }
 
@@ -199,7 +199,7 @@ textFont(font);
 fill(255);
 textSize(size);
 textAlign(LEFT);
-text(string, x, y);
+text(string,x,y);
 
 }
 
@@ -208,7 +208,7 @@ textFont(pfont);
 fill(255);
 textSize(size);
 textAlign(RIGHT);
-text(string, x, y);
+text(string,x,y);
 
 }
 

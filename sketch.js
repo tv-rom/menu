@@ -36,7 +36,7 @@ function preload() {
     var WC_PRICE=[]; 
     var S_PRICE=[];
 
-    //var vid;
+    var vid;
 
 function setup() {
 	//createCanvas(1920, 1080);
@@ -49,8 +49,8 @@ function setup() {
 
   //window.addEventListener('DOMContentLoaded', init)
 
-//vid = createVideo("windy.mp4");
-//vid.loop();
+vid = createVideo("windy.mp4");
+vid.loop();
 
 
 }
@@ -99,7 +99,7 @@ function showInfo(stuff, tabletop) {
 
 function draw() {
  background(0);
- //image(vid,0,0,1920,1080);
+ image(vid,0,0,1920,1080);
 
 	Htextt("BEERS",line1x,b-10,50);
 	H2textt("Draft",line1x,b+s+5,30);

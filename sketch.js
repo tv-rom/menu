@@ -36,7 +36,7 @@ function preload() {
     var WC_PRICE=[]; 
     var S_PRICE=[];
 
-    var vid;
+    //var vid;
 
 function setup() {
 	//createCanvas(1920, 1080);
@@ -49,8 +49,8 @@ function setup() {
 
   //window.addEventListener('DOMContentLoaded', init)
 
-vid = createVideo("windy.mp4");
-vid.loop();
+//vid = createVideo("windy.mp4");
+//vid.loop();
 
 
 }
